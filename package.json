@@ -1,0 +1,23 @@
+{
+  "name": "andela_bootcamp_projects",
+  "version": "1.0.0",
+  "description": "\"Projects at bootcamp\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koyexes/andela-bootcamp-projects.git"
+  },
+  "author": "\"Koya Gabriel\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koyexes/andela-bootcamp-projects/issues"
+  },
+  "homepage": "https://github.com/koyexes/andela-bootcamp-projects#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
