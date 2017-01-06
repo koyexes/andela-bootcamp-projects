@@ -4,7 +4,7 @@
 'use strict'
 
 module.exports = {
-    findMinMax : function (arrayOfNumbers) {
+    findMinMax : (arrayOfNumbers) => {
             var outputArray = [];
             var minimumNumber = arrayOfNumbers[0];
             var maximumNumber = arrayOfNumbers[0];
