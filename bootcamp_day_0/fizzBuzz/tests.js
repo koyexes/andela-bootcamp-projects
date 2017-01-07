@@ -52,8 +52,12 @@ describe("Fizz Buzz tests ", function() {
     expect(myApp.fizzBuzz('15')).toBe('FizzBuzz');
   });
 
-  it("should return `hello` for string value 'hello'", function() {
-    expect(myApp.fizzBuzz('hello')).toBe('hello');
+  it("should return NaN for string value 'hello'", function() {
+    expect(myApp.fizzBuzz('hello')).toEqual(NaN);
+  });
+
+  it("should return NaN for string value true", function() {
+    expect(myApp.fizzBuzz(true)).toEqual(NaN);
   });
 
 
