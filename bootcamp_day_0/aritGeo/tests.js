@@ -62,4 +62,19 @@
       });
 
     });
+
+    describe("Case for Array containing non-numerical values", function () {
+        it("should return `Arithmetic` for ['2','4','6','8','10']", function () {
+            expect(myApp.aritGeo(['2','4','6','8','10'])).toEqual("Arithmetic");
+        });
+
+        it("should return `Geometric` for ['2', '6', '18', '54', '162']", function () {
+            expect(myApp.aritGeo(['2', '6', '18', '54', '162'])).toEqual("Geometric");
+        });
+
+        it("should return -1 for ['2', '6', '18', '54', '162']", function () {
+            expect(myApp.aritGeo(['hello', '6', '18', 'string', '162'])).toEqual(-1);
+        });
+
+    })
   });

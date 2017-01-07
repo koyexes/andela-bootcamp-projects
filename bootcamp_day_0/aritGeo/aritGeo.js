@@ -12,17 +12,26 @@ module.exports = {
             default:
                 switch (arrayOfNumbers.length > 2) {
                     case true:
-                        var difference = arrayOfNumbers[1] - arrayOfNumbers[0];
-                        var ratio = arrayOfNumbers[1] / arrayOfNumbers[0];
-                        var aritFlag = true, geoFlag = true;
-                        for (var index = 2; index < arrayOfNumbers.length; index++) {
-                            aritFlag = ((arrayOfNumbers[index] - arrayOfNumbers[index - 1]) === difference) ? true : false;
-                            geoFlag = ((arrayOfNumbers[index] / arrayOfNumbers[index - 1]) === ratio) ? true : false;
-                            if (aritFlag === false && geoFlag === false) {
-                                break;
+                        try{
+                            var difference = (typeof arrayOfNumbers[1] !== "number" ? parseInt(arrayOfNumbers[1]) : arrayOfNumbers[1] ) - (typeof arrayOfNumbers[0] !== "number" ? parseInt(arrayOfNumbers[0]) : arrayOfNumbers[0] );
+                            var ratio = (typeof arrayOfNumbers[1] !== "number" ? parseInt(arrayOfNumbers[1]) : arrayOfNumbers[1] ) / (typeof arrayOfNumbers[0] !== "number" ? parseInt(arrayOfNumbers[0]) : arrayOfNumbers[0] );
+                            var aritFlag = true, geoFlag = true;
+                            for (var index = 2; index < arrayOfNumbers.length; index++) {
+                                aritFlag = ((typeof arrayOfNumbers[index] !== "number" ? parseInt(arrayOfNumbers[index]) : arrayOfNumbers[index]) - (typeof arrayOfNumbers[index - 1] !== "number" ? parseInt(arrayOfNumbers[index - 1]) : arrayOfNumbers[index - 1]) ) === difference ? true : false;
+
+                                 geoFlag = ((typeof arrayOfNumbers[index] !== "number" ? parseInt(arrayOfNumbers[index]) : arrayOfNumbers[index]) / (typeof arrayOfNumbers[index - 1] !== "number" ? parseInt(arrayOfNumbers[index - 1]) : arrayOfNumbers[index - 1]) ) === ratio ? true : false;
+                                //aritFlag = ((arrayOfNumbers[index] - arrayOfNumbers[index - 1]) === difference) ? true : false;
+                              //  geoFlag = ((arrayOfNumbers[index] / arrayOfNumbers[index - 1]) === ratio) ? true : false;
+                                if (aritFlag === false && geoFlag === false) {
+                                    break;
+                                }
                             }
+                            return ((aritFlag === true) ? 'Arithmetic' : ((geoFlag === true) ? 'Geometric' : -1));
+                        } catch (err) {
+                            return -1;
                         }
-                        return ((aritFlag === true) ? 'Arithmetic' : ((geoFlag === true) ? 'Geometric' : -1));
+
+
                         break;
                     default:
                         return -1;
