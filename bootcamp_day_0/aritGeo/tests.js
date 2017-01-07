@@ -76,5 +76,11 @@
             expect(myApp.aritGeo(['hello', '6', '18', 'string', '162'])).toEqual(-1);
         });
 
-    })
+    });
+
+    describe("Case for Array with length greater than 0 but not enough for sequence checking", function () {
+        it("should return -1 for [2,4]", function () {
+            expect(myApp.aritGeo([2,4])).toEqual(-1);
+        });
+    });
   });
