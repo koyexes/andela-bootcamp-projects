@@ -2,7 +2,10 @@
  * Created by koyexes on 1/7/2017.
  */
 'use strict'
-
+/*
+* this function checks whether a given sequence is arithmetic or geometric in progression
+* or its nor of them
+ */
 module.exports = {
     aritGeo: function (arrayOfNumbers) {
         switch (arrayOfNumbers.length) {

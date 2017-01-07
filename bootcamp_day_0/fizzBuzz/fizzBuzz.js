@@ -4,6 +4,14 @@
  */
 
 'use strict'
+
+/*
+* this function outputs
+* fizzBuzz if input is divisible by 5 and 3,
+ * fizz if input is divisible by 3
+ * buzz if input is divisible by 5,
+ * returns input back if its not divisible by either 3 or 5
+ */
 module.exports = {
     fizzBuzz: function (num) {
         var number = 0;

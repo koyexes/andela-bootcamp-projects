@@ -3,9 +3,13 @@
  */
 'use strict'
 
+/*
+* this function finds the minimum and maximum number in a given collection of numbers
+*/
 module.exports = {
     findMinMax : function (arrayOfNumbers) {
             var outputArray = [];
+            // the try-catch block catches unexpected error while trying to parsing non-numerical inputs
             try {
                 var minimumNumber = (typeof arrayOfNumbers[0] !== "number") ? parseInt(arrayOfNumbers[0]) : arrayOfNumbers[0];
                 var maximumNumber = (typeof arrayOfNumbers[0] !== "number") ? parseInt(arrayOfNumbers[0]) : arrayOfNumbers[0];
@@ -26,7 +30,6 @@ module.exports = {
             } catch (err) {
                 console.log(err);
             }
-
             return outputArray;
     }
 }
