@@ -4,7 +4,7 @@
 'use strict'
   'use strict';
   var myApp = require('./aritGeo.js');
-
+  
   describe("Determine the sequence of an array of numbers: ", function() {
 
     describe("Case for an empty array", function() {
