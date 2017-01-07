@@ -83,4 +83,12 @@
             expect(myApp.aritGeo([2,4])).toEqual(-1);
         });
     });
+    describe("Case for a non Array argument", function () {
+        it("should return -1 for 3", function () {
+            expect(myApp.aritGeo(3)).toEqual(-1);
+        });
+        it("should return -1 for 'hello'", function () {
+            expect(myApp.aritGeo('hello')).toEqual(-1);
+        });
+    });
   });
