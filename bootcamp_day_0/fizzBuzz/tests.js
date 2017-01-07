@@ -40,4 +40,21 @@ describe("Fizz Buzz tests ", function() {
     expect(myApp.fizzBuzz(101)).toBe(101);
   });
 
+  it("should return `Fizz` for int parsable input  divisible by 3", function() {
+    expect(myApp.fizzBuzz('3')).toBe('Fizz');
+  });
+
+  it("should return `Buzz` for int parsable input divisible by 5", function() {
+    expect(myApp.fizzBuzz('5')).toBe('Buzz');
+  });
+
+  it("should return `FizzBuzz` for string value '15'", function() {
+    expect(myApp.fizzBuzz('15')).toBe('FizzBuzz');
+  });
+
+  it("should return `hello` for string value 'hello'", function() {
+    expect(myApp.fizzBuzz('hello')).toBe('hello');
+  });
+
+
 });
