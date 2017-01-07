@@ -27,5 +27,15 @@
 
     });
 
+    describe('Return the min and max number in the list in a new list follows `[min , max]` for an array input contain string datas', function () {
+        it('should return [1,4] for ["1", "2", "3" , "4"]', function () {
+        expect(myApp.findMinMax(["1", "2", "3" , "4"])).toEqual([1,4]);
+      })
+
+      it('should return [4, 6] for ["6", "4"]', function () {
+        expect(myApp.findMinMax(["6", "4"])).toEqual([4, 6]);
+      })
+    })
+
   });
 
