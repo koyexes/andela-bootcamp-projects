@@ -18,5 +18,9 @@
   "homepage": "https://github.com/koyexes/andela-bootcamp-projects#readme",
   "devDependencies": {
     "jasmine": "^2.5.2"
+  },
+  "dependencies": {
+    "jasmine-expect": "^3.0.1",
+    "jasmine-matchers": "^0.2.3"
   }
 }

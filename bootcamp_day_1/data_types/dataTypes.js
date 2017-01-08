@@ -11,7 +11,7 @@ module.exports = {
                  output = parameter.length;
                  break;
              case "object":
-                 output = (parameter instanceof Array) ? (parameter.length > 2 ?  parameter.slice(0,4).pop() : undefined) : "no value";
+                 output = (parameter instanceof Array) ? (parameter.length > 2 ?  parameter[2] : undefined) : "no value";
                  break;
              case "undefined":
                  output = "no value";
