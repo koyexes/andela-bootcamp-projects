@@ -6,7 +6,7 @@
  Any type of animal can inherit from the Animal class and call methods defined in that class.
  
  
-  #####Methods
+  ####Methods
   
   These are some methods from the animal class that can be called and over-ridden by subclasses
   + getName()
