@@ -6,14 +6,11 @@
  Any type of animal can inherit from the Animal class.
  
  
- ###DATA TYPE PROGRAMMING TASK 
- This implements a programming logic that checks the the data type of the passed in input and return appropriate messages.
- 
  ###FINDING THE PRIME NUMBERS IN A SEQUENCE 
  This is a programming logic that filters out the prime numbers within a sequence of numbers based on the passed in limit of the sequence.
 
-###About Cart
-Cart helps people to keep track of the items when they are shopping to have a knowledge of how many items they are going to purchase finally.
+###DATA TYPE PROGRAMMING TASK
+This implements a programming logic that checks the the data type of the passed in input and return appropriate messages.
 
 ###Objectives
 We are going to build a simple Shopping Cart application that will be executed from the browser.
