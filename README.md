@@ -8,14 +8,19 @@
 ####Methods
   These are some methods from the animal class that can be called and over-ridden by subclasses
   + getName()
-  + setName()
-  + move()
+  + setName(newName)
+  + move(speed)
   + eat()
-  + setAge()
-  + setColor()
+  + setAge(newAge)
+  + getColor()
+  + getAge()
   
 ####Example
   **var dog1 = new Dog("Bingo", 25, "Black");**
+  From the above instantiation, **dog1** is an instance of the **Dog class** which is a subclass of the **Animal class**. Therefore **dog1** can access the methods and properties of the **Animal class** because it is also an instance of the **Animal class**
+  **dog1.getName() = "Bingo"**
+  **dog1.getAge() = 25**
+  **dog1.getColor() = "Black"**
  
 
 ###DATA TYPE PROGRAMMING TASK
