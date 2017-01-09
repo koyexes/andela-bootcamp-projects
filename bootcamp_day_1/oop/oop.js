@@ -5,11 +5,11 @@
 var Animal = class Animal {
     constructor(name, age, color, size, weight, height) {
         this.name = name || "Living Thing";
-        this.age = age || undefined;
+        this.age = age;
         this.color = color || "black";
-        this.size = size || undefined;
-        this.weight = weight || undefined;
-        this.height = height || undefined;
+        this.size = size;
+        this.weight = weight;
+        this.height = height;
     }
 
     getName() {
