@@ -3,10 +3,9 @@
 ###OBJECT ORIENTED PROGRAMMING ###
 
  This implements the object oriented paradigm. In this project Animal was used to model a class for different types of animal.
- Any type of animal can inherit from the Animal class and call methods defined in that class.
+ Any type of animal can inherit from the Animal class and call methods defined in that class. For example in this project, a fish and a dog class was sub-classed from the Animal class, which gives them access to call methods defined in the animal class.
  
 ####Methods
-  
   These are some methods from the animal class that can be called and over-ridden by subclasses
   + getName()
   + setName()
