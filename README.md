@@ -48,7 +48,7 @@ If input is of type:
 ###FINDING THE PRIME NUMBERS IN A SEQUENCE 
  This is a programming logic that filters out the prime numbers within a sequence of numbers based on the passed in limit of the sequence. This logic tries to uphold asymptotic analysis by reducing its time and memory complexity to the lowest regardless of the input size. <br/>
  The function is called like this **getPrime(parameter)**<br /> 
- ####Example
+####Example
  **getPrime(10)**  => **[2,3,5,7]** <br />
  **getPrime(20)**  => **[2,3,5,7,11,13,17,19]**
  
