@@ -27,9 +27,21 @@
 ###DATA TYPE PROGRAMMING TASK
 This implements a programming logic that checks the data type of the passed input and return appropriate message. The function is called like this **dataTypes(parameter);**.
 
+####Predefined Output Messages
+If input is of type:
++ string => **the length will be returned**
++ number => **returns either the number is greater than, or less than, or equal to 100**
++ boolean => **return the boolean passed in as argument**
++ object => **if object is an array, it returns 'the third element in the array' if it exist, if not it returns 'undefined'. if the object is not an array, it returns 'undefined'**
++ function => **returns 'called callback' by calling the function and passing 'true' as argument**
+
 ####Example
 **dataType(32) => "less than 100"**<br/>
 **dataType("hello") => 5**<br />
+**dataType(true) => true**<br />
+**dataType(undefined) => undefined**<br />
+**dataType([2,3,4]) => 4**<br />
+**dataType(function(param)) => called callback**<br />
 
 
 
