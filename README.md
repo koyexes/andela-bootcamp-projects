@@ -13,10 +13,13 @@
   + eat()
   + setAge()
   + setColor()
+  
+####Example
+  **var dog1 = new Dog("Bingo", 25, "Black");**
  
 
 ###DATA TYPE PROGRAMMING TASK
-This implements a programming logic that checks the the data type of the passed in input and return appropriate messages.
+This implements a programming logic that checks the data type of the passed input and return appropriate messages.
 
 
 ###FINDING THE PRIME NUMBERS IN A SEQUENCE 
