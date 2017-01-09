@@ -16,7 +16,7 @@
   + getAge()
   
 ####Example
-  **var dog1 = new Dog("Bingo", 25, "Black");**
+  **var dog1 = new Dog("Bingo", 25, "Black");** <br/>
   From the above instantiation, **dog1** is an instance of the **Dog class** which is a subclass of the **Animal class**. Therefore **dog1** can access the methods and properties of the **Animal class** because it is also an instance of the **Animal class**
   
   **dog1.getName() = "Bingo"** <br/>
@@ -25,7 +25,13 @@
  
 
 ###DATA TYPE PROGRAMMING TASK
-This implements a programming logic that checks the data type of the passed input and return appropriate messages.
+This implements a programming logic that checks the data type of the passed input and return appropriate message. The function is called like this **dataTypes(parameter);**.
+
+####Example
+**dataType(32) => "less than 100"**<br/>
+**dataType("hello") => 5**<br />
+
+
 
 
 ###FINDING THE PRIME NUMBERS IN A SEQUENCE 
