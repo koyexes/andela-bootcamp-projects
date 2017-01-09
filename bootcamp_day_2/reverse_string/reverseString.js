@@ -10,3 +10,7 @@ function reverseString(string) {
     var output = helperFunction(string.trim()); // calls the helper function as a callback
     return (output.trim().length === 0) ? null : (output === string ? true : output);
 }
+
+module.exports = {
+    reverseString
+}
