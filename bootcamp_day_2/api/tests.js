@@ -10,13 +10,13 @@ describe("Geographical coordinates", function() {
             return undefined;
         }
     }
-    it("should return undefined if error occurs for a boolean value", function () {
+    it("should return undefined for a boolean value true", function () {
         expect(geo.geocodeAddress(true, call)).toEqual(undefined);
     });
     var fcall = function (error, result) {
             return result;
     };
-     it("should return undefined for result for a boolean value", function () {
+     it("should return undefined for result for a boolean value true", function () {
         expect(geo.geocodeAddress(true, fcall)).toEqual(undefined);
     });
 
