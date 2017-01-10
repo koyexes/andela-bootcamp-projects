@@ -1,6 +1,8 @@
 /**
  * Created by koyexes on 1/9/2017.
  */
+'use strict'
+var words = require('./wordCount').words;
 describe("words()", function() {
   it("counts one word", function() {
     var expectedCounts = { word: 1 };
