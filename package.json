@@ -21,6 +21,8 @@
   },
   "dependencies": {
     "jasmine-expect": "^3.0.1",
-    "jasmine-matchers": "^0.2.3"
+    "jasmine-matchers": "^0.2.3",
+    "request": "^2.79.0",
+    "yargs": "^6.6.0"
   }
 }
