@@ -11,14 +11,16 @@ const argv = yargs
         a: {
             demand : true,
             alias: 'Address',
-            describe: 'Address to fetch weather for',
+            describe: 'Address to fetch weather information about',
             string: true
         }
     }).help().alias('help', 'h').argv;
 
 geocode.geocodeAddress(argv.Address.toString(), (errorMessage, geoResults) => {
+
     if (errorMessage) {
         console.log(errorMessage);
+        return errorMessage;
     } else {
         weather.getWeather(geoResults.latitude, geoResults.longitude, (error, results ) => {
             if (error) {
