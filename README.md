@@ -3,6 +3,9 @@
 ### WEATHER API
 
 This application implements a logic that gives the weather information of a place by making use of the darksky public weather api. This api takes two parameters which are the **latitude and longitude** of the place.
+The application takes in command line arguments using a flag.
+####Example
+**node api.js -a address**
 
 ##BOOTCAMP PROJECT DAY 1
 ###OBJECT ORIENTED PROGRAMMING ###

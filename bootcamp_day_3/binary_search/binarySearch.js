@@ -13,20 +13,22 @@ Array.prototype.search = function (number) {
     var hasFoundIt = false;
     switch (number <= this[lowerLimit] || number >= this[upperLimit]){
         case false:
+
             do{
                  midPoint = Math.floor((upperLimit + lowerLimit) / 2);
-                if (this[midPoint] === number) {
+                if (this[midPoint] === number || this[midPoint + 1] === number || this[midPoint -1] === number) {
                     hasFoundIt = true;
                     break;
                 } else {
-                    if (number < this[midPoint]) {
+                    if (number < this[midPoint] ) {
                         upperLimit = midPoint - 1;
                     } else {
                         lowerLimit = midPoint + 1;
                     }
                 }
-                 counter++;
+                counter++;
             } while (lowerLimit <= upperLimit)
+
             midPoint = hasFoundIt ? midPoint : -1;
             break;
         default:
