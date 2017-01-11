@@ -1,6 +1,9 @@
 /**
  * Created by koyexes on 1/11/2017.
  */
+
+var findMissing = require('./missingNumber');
+
 describe("Find missing number two lists: ", function() {
 
   describe("Case for en empty list", function() {
