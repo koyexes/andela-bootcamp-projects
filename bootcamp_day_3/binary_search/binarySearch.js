@@ -20,13 +20,15 @@ Array.prototype.search = function (number) {
                     hasFoundIt = true;
                     break;
                 } else {
-                    if (number < this[midPoint]) {
-                        upperLimit = midPoint - 1;
+                    if (number < this[midPoint - 1]) {
+                        upperLimit = midPoint - 2;
                     } else {
-                        lowerLimit = midPoint + 1;
+                        if (number > this[midPoint + 1])
+                        lowerLimit = midPoint + 2;
                     }
                 }
                 counter++;
+
             } while (lowerLimit <= upperLimit)
 
             midPoint = hasFoundIt ? midPoint : -1;
