@@ -1,6 +1,9 @@
 /**
  * Created by koyexes on 1/10/2017.
  */
+var toTwenty = require('./binarySearch').toTwenty;
+var toForty = require('./binarySearch').toForty;
+var toOneThousand = require('./binarySearch').toOneThousand;
 describe('Binary Search to traverse an ordered list, effectively', function() {
   describe('Populate the arrays with valid content', function() {
 
