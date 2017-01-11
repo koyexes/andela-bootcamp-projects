@@ -13,24 +13,37 @@ Array.prototype.search = function (number) {
     var hasFoundIt = false;
     switch (number <= this[lowerLimit] || number >= this[upperLimit]){
         case false:
-
-            do{
-                 midPoint = Math.floor((upperLimit + lowerLimit) / 2);
-                if (this[midPoint] === number) {
-                    hasFoundIt = true;
-                    break;
-                } else {
-                    if (number < this[midPoint - 1]) {
+             while (lowerLimit <= upperLimit) {
+                    if(this[upperLimit] === number) {
+                            hasFoundIt = true;
+                            midPoint = upperLimit;
+                            break;
+                      } else {
+                          if (this[lowerLimit] === number) {
+                            hasFoundIt = true;
+                            midPoint = lowerLimit;
+                            break;
+                          }
+                      }
+                    midPoint = Math.floor((upperLimit + lowerLimit) / 2);
+                    if (this[midPoint] === number ) {
+                            hasFoundIt = true;
+                            break;
+                    } else if (this[midPoint + 1] === number){
+                        hasFoundIt = true;
+                        midPoint += 1;
+                        break;
+                    } else if (this[midPoint - 1] === number) {
+                        hasFoundIt = true;
+                        midPoint -= 1;
+                        break;
+                    } else if ( number < this[midPoint - 1]) {
                         upperLimit = midPoint - 2;
                     } else {
-                        if (number > this[midPoint + 1])
                         lowerLimit = midPoint + 2;
                     }
+                    ++counter;
                 }
-                counter++;
-
-            } while (lowerLimit <= upperLimit)
-
             midPoint = hasFoundIt ? midPoint : -1;
             break;
         default:
