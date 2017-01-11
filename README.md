@@ -7,6 +7,14 @@ The application takes in command line arguments using a flag.
 ####Example
 **node api.js -a address**
 
+####HOW IT WORKS
+The application first makes a call to Google Map services using google map API to retrieve the latitude and longitude coordinates of the address, than it makes a second call to the darksky services using their API and the latitude and longitude of the address to retrieve weather information for the address. Information such as:
+ + Temperature
+ + Apparent Temperature
+ + Wind Speed
+ + Pressure
+ + Visibility
+
 ##BOOTCAMP PROJECT DAY 1
 ###OBJECT ORIENTED PROGRAMMING ###
 

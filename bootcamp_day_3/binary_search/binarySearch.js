@@ -13,7 +13,7 @@ Array.prototype.search = function (number) {
     var hasFoundIt = false;
     switch (number <= this[lowerLimit] || number >= this[upperLimit]){
         case false:
-            
+
             do{
                  midPoint = Math.floor((upperLimit + lowerLimit) / 2);
                 if (this[midPoint] === number) {
