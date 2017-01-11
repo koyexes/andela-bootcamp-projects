@@ -3,12 +3,13 @@
 ### WEATHER API
 
 This application implements a logic that gives the weather information of a place by making use of the darksky public weather api. This api takes two parameters which are the **latitude and longitude** of the place.
-The application takes in command line arguments using a flag.
+The application takes in command line arguments using a flag **(-a).
 ####Example
+Simply run this command on the command line. <br />
 **node api.js -a address**
 
 ####HOW IT WORKS
-The application first makes a call to Google Map services using google map API to retrieve the latitude and longitude coordinates of the address, than it makes a second call to the darksky services using their API and the latitude and longitude of the address to retrieve weather information for the address. Information such as:
+The application first makes a call to Google Map services using google map API to retrieve the latitude and longitude coordinates of the address, then it makes a second call to the darksky services using their weather API and the latitude and longitude of the address to retrieve weather information for the address. Information such as:
  + Temperature
  + Apparent Temperature
  + Wind Speed
