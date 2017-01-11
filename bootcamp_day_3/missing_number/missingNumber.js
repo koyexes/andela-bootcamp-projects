@@ -15,6 +15,7 @@ var findMissing = (array1, array2) => {
                missingNumber = value;
                return !(smallerArray.some((value2) =>  value === value2 ))
           });
+          break;
 
     }
      return missingNumber;

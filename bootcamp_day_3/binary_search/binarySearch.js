@@ -13,9 +13,8 @@ Array.prototype.search = function (number) {
     var hasFoundIt = false;
     switch (number <= this[lowerLimit] || number >= this[upperLimit]){
         case false:
-             midPoint = Math.floor((upperLimit + lowerLimit) / 2);
-             while (lowerLimit <= upperLimit) {
-                midPoint = Math.floor((upperLimit + lowerLimit) / 2);
+            do{
+                 midPoint = Math.floor((upperLimit + lowerLimit) / 2);
                 if (this[midPoint] === number) {
                     hasFoundIt = true;
                     break;
@@ -26,15 +25,14 @@ Array.prototype.search = function (number) {
                         lowerLimit = midPoint + 1;
                     }
                 }
-                 ++counter;
-            }
+                 counter++;
+            } while (lowerLimit <= upperLimit)
             midPoint = hasFoundIt ? midPoint : -1;
             break;
         default:
             midPoint = (this[lowerLimit] === number) ? lowerLimit : (this[upperLimit] === number ? upperLimit : -1);
             break;
     }
-
     return {
                 count: counter,
                 index: midPoint,

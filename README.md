@@ -1,5 +1,10 @@
 # ANDELA BOOTCAMP PROJECTS
+## BOOTCAMP PROJECT DAY 2
+### WEATHER API
 
+This application implements a logic that gives the weather information of a place by making use of the darksky public weather api. This api takes two parameters which are the **latitude and longitude** of the place.
+
+##BOOTCAMP PROJECT DAY 1
 ###OBJECT ORIENTED PROGRAMMING ###
 
  This implements the object oriented paradigm. In this project Animal was used to model a class for different types of animal.

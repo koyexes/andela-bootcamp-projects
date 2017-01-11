@@ -1,0 +1,408 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	background-image: url("./images/medgirl.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+#body1 {height:100px; background-color:#637e77; border:0px; width: 100%;}
+#body2 {height:80px; background-color:#275248; border:0px; width: 100%;}
+#house {
+	margin: 0px auto;
+	background:transparent;
+	width:80%;
+	padding-top:0px;
+}
+
+#left{
+	width:20%;
+	background-color:transparent;
+	float:left;
+}
+#right{
+	float:right;
+	width:70.5%;
+	height:auto;
+	background: transparent;
+}
+
+#logoDiv {
+	height:70px;
+	background-image: url("./images/logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color:transparent;
+}
+#finddoc {
+	 height:124px;
+	 background-color:#ae5e23;
+	 border:medium solid white;
+
+}
+#finddocform {
+	width:90%;
+	margin:0px auto;
+	padding-top:15px;
+}
+#finddocform a:hover { text-decoration:underline;}
+
+table tr td a {
+	font-size:11pt;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#2a5147;
+	text-decoration: none;
+	padding-left:7px;
+}
+table { width:100%;}
+td { height:25px;}
+tr.sc1 {background-color:#eadfd2;}
+tr a:hover { color:#ae5e23; text-decoration: underline;}
+tr.sc1:hover { background-color:transparent;}
+
+#header {
+	width: 100%;
+	height: 50px;
+	background-color: transparent;
+}
+
+nav {float:right;}
+.hlinks{
+	list-style: none;
+	float: left;
+    padding: 0px 4px;
+    height: 20px;
+}
+a {
+	text-decoration: none;
+	color:white;
+	font-size:10pt;
+}
+#header nav ul li a:hover {text-decoration: underline; font-style:italic;}
+
+#search{background-color:white; width:130px; height:20px; float:left;}
+#go {  float:left;}
+#main {
+	width:100%;
+	background-color:transparent;
+}
+
+#nav {
+	height:35px;
+	width:100%;
+	background-color:#ae5e23;
+	padding-left:0px;
+}
+.nav {
+	display: inline-block;
+	float: left;
+	height: 35px;
+	width: 107px;
+	text-align: center;
+	line-height:1;
+	border-right: thin solid white;
+	cursor:pointer;
+	position:relative;
+}
+
+.nav:hover{
+	background-color:#275248;
+}
+#nav ul li a {
+	font-size: 8pt;
+	font-family: Arial, Helvetica,sans-serif;
+}
+#nav ul li a:hover {
+    text-decoration: underline;
+    color: #caef0f;
+}
+#pvi1 a, #pvi2 a, #pvi3 a {
+	vertical-align: -7px ;
+}
+
+ul#patients, ul#visitors, ul#hp, ul#cs, ul#innovation, ul#onlineserv, ul#foundations  {
+	display: none;
+	background-color:#275248;
+	border:none none #275248;
+	padding: 10px 10px 25px 20px;
+	width:180px;
+	position:absolute;
+	top:35px;
+	left:0px;
+}
+#nav ul li:hover ul {
+	display:block;
+}
+
+
+ul#patients li, ul#visitors li, ul#hp li, ul#cs li, ul#innovation li, ul#onlineserv li, ul#foundations li {
+	list-style-type:none;
+	text-align:left;
+	border-right:none;
+	width:170px;
+	height:auto;
+    margin-top: 8px;
+}
+
+ul#patients {
+    width:670px;
+    padding:20px 0px 40px 0px;
+}
+
+ul#patients li {
+    display:block;
+    float: left;
+    width:670px;
+    padding: 0px;
+}
+
+div.patients {
+    float: left;
+    width: auto;
+    margin-left:40px;
+}
+ul#patients li dl dd {
+    margin-left: 6px;
+    height: 25px;
+}
+
+div.patients div{
+    border-top: thin solid #637e77;
+    margin-top: 30px;
+    padding-top: 30px;
+    width: 170px;
+}
+h4 {
+    margin: 0px 0px 4px 0px;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 10pt;
+    color: #caef0f;
+}
+
+.patients div p {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 8pt;
+    color: #caef0f;
+    text-justify: distribute;
+    margin-top: 2px;
+}
+
+#nav ul li ul li a {
+	color:white;
+	font-family:sans-serif;
+	font-size:10pt;
+}
+
+#nav ul li ul li a:hover {
+    color: black;
+    text-decoration: none;
+}
+#donate, div#innovation {
+    width: 170px;
+    border-top: thin solid grey;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+#main {
+	background-color: #efefe7;
+}
+#submain {
+	background-color:transparent;
+	width:740px;
+    height: 720px;
+	margin-top:10px;
+	margin-left:10px;
+}
+
+#image {
+	height:350px;
+	background-image: url("./images/nursing-services-doctors-staff.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width:100%;
+}
+
+div#contents {
+	background-color:transparent;
+	width:100%;
+    height: 600px;
+	margin-top:20px;
+}
+
+div#lside{
+	float:left;
+	width:65%;
+	background-color:transparent;
+	height:330px;
+}
+
+div#lside div {
+	margin-left:3%;
+	margin-right:3%;
+}
+
+div#lsidenav {
+	width:87.5%;
+	height:27px;
+	background-color:transparent;
+	border-bottom:thin black solid;
+}
+
+div#lsidenav ul{
+	padding-left:0px;
+	width: 400px;
+	height:25px;
+	background-color:transparent;
+
+}
+
+div#lsidenav ul li {
+	float:left;
+	list-style-type:none;
+	display:inline-block;
+	width:auto;
+	height:25px;
+	padding:0px 10px 0px 10px;
+	background-color:#eadfd2;
+	margin-left:1px;
+	text-align:center;
+}
+
+div#lsidenav ul li:hover {
+    background-color: #637e77;
+    cursor: pointer;
+}
+
+#lsidenav ul li:hover span#youtube {
+    color: #275248;
+    background-color: white;
+}
+
+#lsidenav ul li:hover a {
+    color: white;
+    font-size: larger;
+}
+
+#lsidenav ul li a {
+	font-family: "Adobe Caslon Pro";
+	font-size:11pt;
+	vertical-align:-3px;
+	color:#542604;
+	font-weight:bold;
+}
+
+#lsidemain {
+	width:87.5%;
+	height:auto;
+	background-color:transparent;
+	padding-top:17px;
+}
+
+span.dates {
+	float:right;
+	color:#275248;
+	font-size:10pt;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-stretch:expanded;
+}
+
+#rside {
+	float:right;
+	width:31%;
+	height:330px;
+	background-color:transparent;
+}
+
+#rside video {
+	margin-top:40px;
+    width: 220px;
+    height: 131px;
+}
+
+#onlineservices {
+	width:92%;
+	height:140px;
+	background-color: #f3f0e7;
+	padding:12px 0px 0px 8px;
+	margin:10px 0px 0px 0px;
+}
+
+#onlineservices label {
+	font-family:"Adobe Caslon Pro Bold";
+	font-size:12pt;
+	color:#275248;
+}
+
+#onlineservices  div input{ float:left;}
+
+#onlineservices a, div#lsidemain a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:9pt;
+	color: #ae5e23;
+}
+
+#onlineservices a:hover, div#lsidemain a:hover {
+	text-decoration:underline;
+	color:#275248;
+}
+
+#footer {
+    width: 100%;
+    height: 200px;
+    background-color:transparent;
+    padding: 0px;
+	margin-top: 30px;
+}
+
+
+div.addy{
+      padding :0px;
+      margin:0px;
+      height:20px;
+      width: 100%;
+      background-color: transparent;
+      border-bottom: thin;
+      border-bottom-style: solid;
+}
+
+#addy1 {float: left;}
+#addy2 {
+    float: right;
+    text-align: right;
+}
+div.addy p {
+    margin: 0px;
+    text-align:match-parent;
+    text-justify: distribute;
+    font-family: sans-serif;
+    color: black;
+}
+
+.flinks {
+	text-decoration: none;
+	color:black;
+	font-size:12pt;
+	font-family:Times New Roman;
+}
+
+.fdiv ul li a:hover { text-decoration:underline;}
+.fdiv ul li { list-style-type: none;}
+.fdiv ul {padding-left: 0px;}
+
+#fdiv{ clear:both; margin-top:4px; background-color: transparent;}
+
+.fdiv{
+     float:left;
+     background-color: transparent;
+     padding: 0px;
+	 margin: 0px;
+}
+
+
+
+
+
