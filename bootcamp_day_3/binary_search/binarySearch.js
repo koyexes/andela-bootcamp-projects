@@ -40,11 +40,6 @@ Array.prototype.search = function (number) {
             };
 };
 
-var array = [].toOneThousand();
-//console.log(array);
-console.log(array.search(40));
-//console.log([].toForty().search(30));
-//console.log([].toOneThousand().search(100));
 
 module.exports = {
     toTwenty: Array.toTwenty,
